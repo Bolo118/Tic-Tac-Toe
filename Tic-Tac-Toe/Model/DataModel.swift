@@ -63,7 +63,7 @@ struct DataModel {
     }
     
     func bg(_ background: UIButton) {
-        background.backgroundColor = UIColor(red: 0.80, green: 0.00, blue: 0.40, alpha: 1.00)
+        background.backgroundColor = UIColor(red: 0.06, green: 0.22, blue: 0.36, alpha: 1.00)
     }
     
     mutating func gotWinner() {

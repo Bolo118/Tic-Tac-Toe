@@ -25,11 +25,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIC TAC TOE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-qg-9J3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                                <color key="textColor" name="aWinner"/>
+                                                <color key="textColor" name="bWinner"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="g2y-qg-9J3" secondAttribute="bottom" id="380-HM-Axs"/>
                                             <constraint firstItem="g2y-qg-9J3" firstAttribute="leading" secondItem="sLJ-uy-AcN" secondAttribute="leading" id="DzF-sT-9tT"/>
@@ -43,11 +43,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                                <color key="textColor" name="aWinner"/>
+                                                <color key="textColor" name="bWinner"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstItem="uzg-cH-msq" firstAttribute="top" secondItem="XMy-4G-2Oq" secondAttribute="top" id="NNW-mE-Kl3"/>
                                             <constraint firstAttribute="bottom" secondItem="uzg-cH-msq" secondAttribute="bottom" id="guI-4w-jqX"/>
@@ -63,10 +63,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SR-Pf-ggB">
                                                         <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJ0-vi-ec9"/>
@@ -74,10 +74,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-ff-fRW">
                                                         <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AF9-Jm-y2b"/>
@@ -85,10 +85,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAS-ya-QgS">
                                                         <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpT-CV-kft"/>
@@ -97,7 +97,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="FAV-9v-2KH" secondAttribute="trailing" id="E5h-41-GF5"/>
                                             <constraint firstItem="FAV-9v-2KH" firstAttribute="leading" secondItem="PFU-Et-pQE" secondAttribute="leading" id="G8k-5Q-Vla"/>
@@ -113,10 +113,10 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-LF-sYx">
                                                         <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pG-Pd-aE4"/>
@@ -124,10 +124,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-oj-m0Q">
                                                         <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8c-qk-zjz"/>
@@ -135,10 +135,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rts-9j-aVv">
                                                         <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hL-xG-eVX"/>
@@ -147,7 +147,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstItem="PVf-D2-xN4" firstAttribute="leading" secondItem="30s-Cb-8Lj" secondAttribute="leading" id="Gsj-RQ-mGh"/>
                                             <constraint firstAttribute="bottom" secondItem="PVf-D2-xN4" secondAttribute="bottom" id="fkg-vy-bPV"/>
@@ -163,10 +163,10 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-sg-A6G">
                                                         <rect key="frame" x="0.0" y="0.0" width="134.5" height="132.5"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4Y-Tf-DSl"/>
@@ -174,10 +174,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDB-9o-iPZ">
                                                         <rect key="frame" x="139.5" y="0.0" width="135" height="132.5"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKg-UJ-Aaa"/>
@@ -185,10 +185,10 @@
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk5-ZI-a8P">
                                                         <rect key="frame" x="279.5" y="0.0" width="134.5" height="132.5"/>
-                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="aSymbol"/>
+                                                            <color key="titleColor" name="bSymbol"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ym2-PU-kEX"/>
@@ -197,7 +197,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstItem="H29-H7-tpl" firstAttribute="top" secondItem="UrE-1l-8Gr" secondAttribute="top" id="D3a-iG-xoc"/>
                                             <constraint firstItem="H29-H7-tpl" firstAttribute="leading" secondItem="UrE-1l-8Gr" secondAttribute="leading" id="FBx-r1-ijh"/>
@@ -211,11 +211,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-Q9-0lg">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                                <color key="textColor" name="aWinner"/>
+                                                <color key="textColor" name="bWinner"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" name="abackground"/>
+                                        <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="bvb-Q9-0lg" secondAttribute="bottom" id="8Wi-fM-zcJ"/>
                                             <constraint firstItem="bvb-Q9-0lg" firstAttribute="top" secondItem="NQT-vA-GiE" secondAttribute="top" id="DpK-uf-vsV"/>
@@ -226,7 +226,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" name="abackground"/>
+                        <color key="backgroundColor" name="bBackground"/>
                         <constraints>
                             <constraint firstItem="EHQ-6g-8sC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0le-MR-1wj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHQ-6g-8sC" secondAttribute="trailing" id="CSd-qu-nuW"/>
@@ -256,17 +256,17 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="aBoard">
-            <color red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bBackground">
+            <color red="0.95686274509803926" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="aSymbol">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bBoard">
+            <color red="0.95294117647058818" green="0.77647058823529413" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="aWinner">
-            <color red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bSymbol">
+            <color red="0.070588235294117646" green="0.46274509803921571" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="abackground">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bWinner">
+            <color red="0.062745098039215685" green="0.21568627450980393" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
