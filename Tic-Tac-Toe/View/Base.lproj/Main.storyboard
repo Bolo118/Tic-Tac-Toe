@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-6g-8sC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-uy-AcN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIC TAC TOE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-qg-9J3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                <color key="textColor" name="aWinner"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="g2y-qg-9J3" secondAttribute="bottom" id="380-HM-Axs"/>
+                                            <constraint firstItem="g2y-qg-9J3" firstAttribute="leading" secondItem="sLJ-uy-AcN" secondAttribute="leading" id="DzF-sT-9tT"/>
+                                            <constraint firstItem="g2y-qg-9J3" firstAttribute="top" secondItem="sLJ-uy-AcN" secondAttribute="top" id="NLZ-nX-Tyn"/>
+                                            <constraint firstAttribute="trailing" secondItem="g2y-qg-9J3" secondAttribute="trailing" id="zwo-UL-VUH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-4G-2Oq">
+                                        <rect key="frame" x="0.0" y="137" width="414" height="132.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <color key="textColor" name="aWinner"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstItem="uzg-cH-msq" firstAttribute="top" secondItem="XMy-4G-2Oq" secondAttribute="top" id="NNW-mE-Kl3"/>
+                                            <constraint firstAttribute="bottom" secondItem="uzg-cH-msq" secondAttribute="bottom" id="guI-4w-jqX"/>
+                                            <constraint firstAttribute="trailing" secondItem="uzg-cH-msq" secondAttribute="trailing" id="hWp-Cp-zUJ"/>
+                                            <constraint firstItem="uzg-cH-msq" firstAttribute="leading" secondItem="XMy-4G-2Oq" secondAttribute="leading" id="piv-Mi-1dd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-Et-pQE">
+                                        <rect key="frame" x="0.0" y="274.5" width="414" height="132"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FAV-9v-2KH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SR-Pf-ggB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJ0-vi-ec9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-ff-fRW">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AF9-Jm-y2b"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAS-ya-QgS">
+                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpT-CV-kft"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FAV-9v-2KH" secondAttribute="trailing" id="E5h-41-GF5"/>
+                                            <constraint firstItem="FAV-9v-2KH" firstAttribute="leading" secondItem="PFU-Et-pQE" secondAttribute="leading" id="G8k-5Q-Vla"/>
+                                            <constraint firstItem="FAV-9v-2KH" firstAttribute="top" secondItem="PFU-Et-pQE" secondAttribute="top" id="NTb-LO-28a"/>
+                                            <constraint firstAttribute="bottom" secondItem="FAV-9v-2KH" secondAttribute="bottom" id="dmg-Dz-r9y"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30s-Cb-8Lj">
+                                        <rect key="frame" x="0.0" y="411.5" width="414" height="132"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PVf-D2-xN4">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-LF-sYx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pG-Pd-aE4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-oj-m0Q">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8c-qk-zjz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rts-9j-aVv">
+                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hL-xG-eVX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstItem="PVf-D2-xN4" firstAttribute="leading" secondItem="30s-Cb-8Lj" secondAttribute="leading" id="Gsj-RQ-mGh"/>
+                                            <constraint firstAttribute="bottom" secondItem="PVf-D2-xN4" secondAttribute="bottom" id="fkg-vy-bPV"/>
+                                            <constraint firstItem="PVf-D2-xN4" firstAttribute="top" secondItem="30s-Cb-8Lj" secondAttribute="top" id="hZm-9V-4HS"/>
+                                            <constraint firstAttribute="trailing" secondItem="PVf-D2-xN4" secondAttribute="trailing" id="xcR-G3-fg2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-1l-8Gr">
+                                        <rect key="frame" x="0.0" y="548.5" width="414" height="132.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H29-H7-tpl">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-sg-A6G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132.5"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4Y-Tf-DSl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDB-9o-iPZ">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132.5"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKg-UJ-Aaa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk5-ZI-a8P">
+                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132.5"/>
+                                                        <color key="backgroundColor" name="aBoard"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" name="aSymbol"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ym2-PU-kEX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstItem="H29-H7-tpl" firstAttribute="top" secondItem="UrE-1l-8Gr" secondAttribute="top" id="D3a-iG-xoc"/>
+                                            <constraint firstItem="H29-H7-tpl" firstAttribute="leading" secondItem="UrE-1l-8Gr" secondAttribute="leading" id="FBx-r1-ijh"/>
+                                            <constraint firstAttribute="trailing" secondItem="H29-H7-tpl" secondAttribute="trailing" id="d8f-76-twc"/>
+                                            <constraint firstAttribute="bottom" secondItem="H29-H7-tpl" secondAttribute="bottom" id="jbL-dj-3tm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQT-vA-GiE">
+                                        <rect key="frame" x="0.0" y="686" width="414" height="132"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-Q9-0lg">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <color key="textColor" name="aWinner"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="abackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="bvb-Q9-0lg" secondAttribute="bottom" id="8Wi-fM-zcJ"/>
+                                            <constraint firstItem="bvb-Q9-0lg" firstAttribute="top" secondItem="NQT-vA-GiE" secondAttribute="top" id="DpK-uf-vsV"/>
+                                            <constraint firstAttribute="trailing" secondItem="bvb-Q9-0lg" secondAttribute="trailing" id="Qyh-6B-OGM"/>
+                                            <constraint firstItem="bvb-Q9-0lg" firstAttribute="leading" secondItem="NQT-vA-GiE" secondAttribute="leading" id="mdI-PM-QVI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="abackground"/>
+                        <constraints>
+                            <constraint firstItem="EHQ-6g-8sC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0le-MR-1wj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHQ-6g-8sC" secondAttribute="trailing" id="CSd-qu-nuW"/>
+                            <constraint firstItem="EHQ-6g-8sC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jf3-gx-Jcx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EHQ-6g-8sC" secondAttribute="bottom" id="xQu-DS-uxy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="9SR-Pf-ggB" id="hLa-6J-ggZ"/>
+                        <outlet property="button2" destination="dW5-ff-fRW" id="5Wb-Zo-gR6"/>
+                        <outlet property="button3" destination="sAS-ya-QgS" id="Dpi-9w-jLd"/>
+                        <outlet property="button4" destination="G9g-LF-sYx" id="Jmb-a8-1pw"/>
+                        <outlet property="button5" destination="Z5u-oj-m0Q" id="bmD-sX-5db"/>
+                        <outlet property="button6" destination="Rts-9j-aVv" id="0gc-38-e8v"/>
+                        <outlet property="button7" destination="aXI-sg-A6G" id="63e-TS-nXg"/>
+                        <outlet property="button8" destination="PDB-9o-iPZ" id="WSq-d9-TyS"/>
+                        <outlet property="button9" destination="Bk5-ZI-a8P" id="PMv-1Q-oK5"/>
+                        <outlet property="gameOverLabel" destination="bvb-Q9-0lg" id="eBl-pJ-XQO"/>
+                        <outlet property="logoLabel" destination="g2y-qg-9J3" id="hex-a1-WZo"/>
+                        <outlet property="whoseTurn" destination="uzg-cH-msq" id="2Ww-1y-rdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="aBoard">
+            <color red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="aSymbol">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="aWinner">
+            <color red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="abackground">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

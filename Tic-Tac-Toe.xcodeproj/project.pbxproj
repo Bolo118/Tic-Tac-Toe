@@ -13,6 +13,7 @@
 		ECB75C77249C8B2900727B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB75C75249C8B2900727B0C /* Main.storyboard */; };
 		ECB75C79249C8B2A00727B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB75C78249C8B2A00727B0C /* Assets.xcassets */; };
 		ECB75C7C249C8B2A00727B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB75C7A249C8B2A00727B0C /* LaunchScreen.storyboard */; };
+		ECB75C86249C8EA100727B0C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C85249C8EA100727B0C /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ECB75C78249C8B2A00727B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB75C7B249C8B2A00727B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB75C7D249C8B2A00727B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB75C85249C8EA100727B0C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				ECB75C6F249C8B2900727B0C /* AppDelegate.swift */,
 				ECB75C71249C8B2900727B0C /* SceneDelegate.swift */,
-				ECB75C73249C8B2900727B0C /* ViewController.swift */,
-				ECB75C75249C8B2900727B0C /* Main.storyboard */,
+				ECB75C87249C8EA700727B0C /* Model */,
+				ECB75C84249C8E8800727B0C /* Controller */,
+				ECB75C83249C8E7F00727B0C /* View */,
 				ECB75C78249C8B2A00727B0C /* Assets.xcassets */,
 				ECB75C7A249C8B2A00727B0C /* LaunchScreen.storyboard */,
 				ECB75C7D249C8B2A00727B0C /* Info.plist */,
 			);
 			path = "Tic-Tac-Toe";
+			sourceTree = "<group>";
+		};
+		ECB75C83249C8E7F00727B0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECB75C75249C8B2900727B0C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECB75C84249C8E8800727B0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECB75C73249C8B2900727B0C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECB75C87249C8EA700727B0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECB75C85249C8EA100727B0C /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB75C74249C8B2900727B0C /* ViewController.swift in Sources */,
+				ECB75C86249C8EA100727B0C /* DataModel.swift in Sources */,
 				ECB75C70249C8B2900727B0C /* AppDelegate.swift in Sources */,
 				ECB75C72249C8B2900727B0C /* SceneDelegate.swift in Sources */,
 			);
