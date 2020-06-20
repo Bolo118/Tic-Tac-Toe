@@ -40,18 +40,18 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-4G-2Oq">
                                         <rect key="frame" x="0.0" y="137" width="414" height="132.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Fr-672">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Fr-672">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <color key="textColor" name="bWinner"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-9M-Awr">
-                                                        <rect key="frame" x="35.5" y="61.5" width="343" height="71"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                        <rect key="frame" x="69.5" y="66.5" width="275" height="66"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <state key="normal" title="Restart Game?">
                                                             <color key="titleColor" name="bWinner"/>
                                                         </state>
@@ -74,10 +74,10 @@
                                         <rect key="frame" x="0.0" y="274.5" width="414" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FAV-9v-2KH">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <rect key="frame" x="10" y="0.0" width="394" height="132"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SR-Pf-ggB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -88,7 +88,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-ff-fRW">
-                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
+                                                        <rect key="frame" x="133" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -99,7 +99,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAS-ya-QgS">
-                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
+                                                        <rect key="frame" x="266" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -114,8 +114,8 @@
                                         </subviews>
                                         <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FAV-9v-2KH" secondAttribute="trailing" id="E5h-41-GF5"/>
-                                            <constraint firstItem="FAV-9v-2KH" firstAttribute="leading" secondItem="PFU-Et-pQE" secondAttribute="leading" id="G8k-5Q-Vla"/>
+                                            <constraint firstAttribute="trailing" secondItem="FAV-9v-2KH" secondAttribute="trailing" constant="10" id="E5h-41-GF5"/>
+                                            <constraint firstItem="FAV-9v-2KH" firstAttribute="leading" secondItem="PFU-Et-pQE" secondAttribute="leading" constant="10" id="G8k-5Q-Vla"/>
                                             <constraint firstItem="FAV-9v-2KH" firstAttribute="top" secondItem="PFU-Et-pQE" secondAttribute="top" id="NTb-LO-28a"/>
                                             <constraint firstAttribute="bottom" secondItem="FAV-9v-2KH" secondAttribute="bottom" id="dmg-Dz-r9y"/>
                                         </constraints>
@@ -124,10 +124,10 @@
                                         <rect key="frame" x="0.0" y="411.5" width="414" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PVf-D2-xN4">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <rect key="frame" x="10" y="0.0" width="394" height="132"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-LF-sYx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -138,7 +138,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-oj-m0Q">
-                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132"/>
+                                                        <rect key="frame" x="133" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -149,7 +149,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rts-9j-aVv">
-                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132"/>
+                                                        <rect key="frame" x="266" y="0.0" width="128" height="132"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -164,20 +164,20 @@
                                         </subviews>
                                         <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
-                                            <constraint firstItem="PVf-D2-xN4" firstAttribute="leading" secondItem="30s-Cb-8Lj" secondAttribute="leading" id="Gsj-RQ-mGh"/>
+                                            <constraint firstItem="PVf-D2-xN4" firstAttribute="leading" secondItem="30s-Cb-8Lj" secondAttribute="leading" constant="10" id="Gsj-RQ-mGh"/>
                                             <constraint firstAttribute="bottom" secondItem="PVf-D2-xN4" secondAttribute="bottom" id="fkg-vy-bPV"/>
                                             <constraint firstItem="PVf-D2-xN4" firstAttribute="top" secondItem="30s-Cb-8Lj" secondAttribute="top" id="hZm-9V-4HS"/>
-                                            <constraint firstAttribute="trailing" secondItem="PVf-D2-xN4" secondAttribute="trailing" id="xcR-G3-fg2"/>
+                                            <constraint firstAttribute="trailing" secondItem="PVf-D2-xN4" secondAttribute="trailing" constant="10" id="xcR-G3-fg2"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-1l-8Gr">
                                         <rect key="frame" x="0.0" y="548.5" width="414" height="132.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H29-H7-tpl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
+                                                <rect key="frame" x="10" y="0.0" width="394" height="132.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-sg-A6G">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="132.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="132.5"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -188,7 +188,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDB-9o-iPZ">
-                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="132.5"/>
+                                                        <rect key="frame" x="133" y="0.0" width="128" height="132.5"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -199,7 +199,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk5-ZI-a8P">
-                                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="132.5"/>
+                                                        <rect key="frame" x="266" y="0.0" width="128" height="132.5"/>
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
@@ -215,8 +215,8 @@
                                         <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
                                             <constraint firstItem="H29-H7-tpl" firstAttribute="top" secondItem="UrE-1l-8Gr" secondAttribute="top" id="D3a-iG-xoc"/>
-                                            <constraint firstItem="H29-H7-tpl" firstAttribute="leading" secondItem="UrE-1l-8Gr" secondAttribute="leading" id="FBx-r1-ijh"/>
-                                            <constraint firstAttribute="trailing" secondItem="H29-H7-tpl" secondAttribute="trailing" id="d8f-76-twc"/>
+                                            <constraint firstItem="H29-H7-tpl" firstAttribute="leading" secondItem="UrE-1l-8Gr" secondAttribute="leading" constant="10" id="FBx-r1-ijh"/>
+                                            <constraint firstAttribute="trailing" secondItem="H29-H7-tpl" secondAttribute="trailing" constant="10" id="d8f-76-twc"/>
                                             <constraint firstAttribute="bottom" secondItem="H29-H7-tpl" secondAttribute="bottom" id="jbL-dj-3tm"/>
                                         </constraints>
                                     </view>
@@ -229,8 +229,8 @@
                                                 <color key="textColor" name="bWinner"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="bGp-qd-Yyv">
-                                                <rect key="frame" x="10" y="6" width="77" height="86"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="bGp-qd-Yyv">
+                                                <rect key="frame" x="10" y="56" width="77" height="76"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X's Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-g3-rFi">
                                                         <rect key="frame" x="0.0" y="0.0" width="77" height="48"/>
@@ -239,15 +239,15 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ6-ZN-1Ti">
-                                                        <rect key="frame" x="0.0" y="38" width="77" height="48"/>
+                                                        <rect key="frame" x="0.0" y="28" width="77" height="48"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <color key="textColor" name="bWinner"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-eF-hnv">
-                                                <rect key="frame" x="326" y="6" width="78" height="86"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-eF-hnv">
+                                                <rect key="frame" x="326" y="56" width="78" height="76"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O's Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-2I-3Oh">
                                                         <rect key="frame" x="0.0" y="0.0" width="78" height="48"/>
@@ -256,7 +256,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDP-9T-lXQ">
-                                                        <rect key="frame" x="0.0" y="38" width="78" height="48"/>
+                                                        <rect key="frame" x="0.0" y="28" width="78" height="48"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <color key="textColor" name="bWinner"/>
                                                         <nil key="highlightedColor"/>
@@ -269,9 +269,9 @@
                                             <constraint firstAttribute="trailing" secondItem="hJo-eF-hnv" secondAttribute="trailing" constant="10" id="6ZP-Ou-bX4"/>
                                             <constraint firstAttribute="bottom" secondItem="bvb-Q9-0lg" secondAttribute="bottom" id="8Wi-fM-zcJ"/>
                                             <constraint firstItem="bvb-Q9-0lg" firstAttribute="top" secondItem="NQT-vA-GiE" secondAttribute="top" id="DpK-uf-vsV"/>
-                                            <constraint firstAttribute="bottom" secondItem="bGp-qd-Yyv" secondAttribute="bottom" constant="40" id="P32-B6-6B5"/>
+                                            <constraint firstAttribute="bottom" secondItem="bGp-qd-Yyv" secondAttribute="bottom" id="P32-B6-6B5"/>
                                             <constraint firstAttribute="trailing" secondItem="bvb-Q9-0lg" secondAttribute="trailing" id="Qyh-6B-OGM"/>
-                                            <constraint firstAttribute="bottom" secondItem="hJo-eF-hnv" secondAttribute="bottom" constant="40" id="jtD-bG-j6m"/>
+                                            <constraint firstAttribute="bottom" secondItem="hJo-eF-hnv" secondAttribute="bottom" id="jtD-bG-j6m"/>
                                             <constraint firstItem="bGp-qd-Yyv" firstAttribute="leading" secondItem="NQT-vA-GiE" secondAttribute="leading" constant="10" id="lVF-wP-ycB"/>
                                             <constraint firstItem="bvb-Q9-0lg" firstAttribute="leading" secondItem="NQT-vA-GiE" secondAttribute="leading" id="mdI-PM-QVI"/>
                                         </constraints>

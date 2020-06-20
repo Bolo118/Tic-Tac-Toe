@@ -44,8 +44,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-    
-        data.isFull()
+
         data.whoseTurn = self.whoseTurn
         data.gameOverLabel = self.gameOverLabel
         data.xScore = self.xScore
@@ -113,6 +112,7 @@ class ViewController: UIViewController {
             }
         }
         data.gotWinner()
+        data.isFull()
     }
     
     func newTable() {
