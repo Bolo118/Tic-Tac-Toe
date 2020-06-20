@@ -40,17 +40,17 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-4G-2Oq">
                                         <rect key="frame" x="0.0" y="137" width="414" height="132.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Fr-672">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Fr-672">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <color key="textColor" name="bWinner"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-9M-Awr">
-                                                        <rect key="frame" x="35.5" y="66.5" width="343" height="66"/>
+                                                        <rect key="frame" x="35.5" y="61.5" width="343" height="71"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                         <state key="normal" title="Restart Game?">
                                                             <color key="titleColor" name="bWinner"/>
@@ -81,7 +81,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJ0-vi-ec9"/>
@@ -92,7 +92,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AF9-Jm-y2b"/>
@@ -103,7 +103,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpT-CV-kft"/>
@@ -131,7 +131,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pG-Pd-aE4"/>
@@ -142,7 +142,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8c-qk-zjz"/>
@@ -153,7 +153,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hL-xG-eVX"/>
@@ -181,7 +181,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4Y-Tf-DSl"/>
@@ -192,7 +192,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKg-UJ-Aaa"/>
@@ -203,7 +203,7 @@
                                                         <color key="backgroundColor" name="bBoard"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" name="bSymbol"/>
+                                                            <color key="titleColor" name="bWinner"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ym2-PU-kEX"/>
@@ -223,18 +223,56 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQT-vA-GiE">
                                         <rect key="frame" x="0.0" y="686" width="414" height="132"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-Q9-0lg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-Q9-0lg">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                 <color key="textColor" name="bWinner"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="bGp-qd-Yyv">
+                                                <rect key="frame" x="10" y="6" width="77" height="86"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X's Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-g3-rFi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="48"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" name="bWinner"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ6-ZN-1Ti">
+                                                        <rect key="frame" x="0.0" y="38" width="77" height="48"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                        <color key="textColor" name="bWinner"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-eF-hnv">
+                                                <rect key="frame" x="326" y="6" width="78" height="86"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O's Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-2I-3Oh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="48"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" name="bWinner"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDP-9T-lXQ">
+                                                        <rect key="frame" x="0.0" y="38" width="78" height="48"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                        <color key="textColor" name="bWinner"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hJo-eF-hnv" secondAttribute="trailing" constant="10" id="6ZP-Ou-bX4"/>
                                             <constraint firstAttribute="bottom" secondItem="bvb-Q9-0lg" secondAttribute="bottom" id="8Wi-fM-zcJ"/>
                                             <constraint firstItem="bvb-Q9-0lg" firstAttribute="top" secondItem="NQT-vA-GiE" secondAttribute="top" id="DpK-uf-vsV"/>
+                                            <constraint firstAttribute="bottom" secondItem="bGp-qd-Yyv" secondAttribute="bottom" constant="40" id="P32-B6-6B5"/>
                                             <constraint firstAttribute="trailing" secondItem="bvb-Q9-0lg" secondAttribute="trailing" id="Qyh-6B-OGM"/>
+                                            <constraint firstAttribute="bottom" secondItem="hJo-eF-hnv" secondAttribute="bottom" constant="40" id="jtD-bG-j6m"/>
+                                            <constraint firstItem="bGp-qd-Yyv" firstAttribute="leading" secondItem="NQT-vA-GiE" secondAttribute="leading" constant="10" id="lVF-wP-ycB"/>
                                             <constraint firstItem="bvb-Q9-0lg" firstAttribute="leading" secondItem="NQT-vA-GiE" secondAttribute="leading" id="mdI-PM-QVI"/>
                                         </constraints>
                                     </view>
@@ -263,7 +301,9 @@
                         <outlet property="button9" destination="Bk5-ZI-a8P" id="PMv-1Q-oK5"/>
                         <outlet property="gameOverLabel" destination="bvb-Q9-0lg" id="eBl-pJ-XQO"/>
                         <outlet property="logoLabel" destination="g2y-qg-9J3" id="hex-a1-WZo"/>
+                        <outlet property="oScore" destination="QDP-9T-lXQ" id="ePW-gc-9Is"/>
                         <outlet property="whoseTurn" destination="uzg-cH-msq" id="2Ww-1y-rdY"/>
+                        <outlet property="xScore" destination="jQ6-ZN-1Ti" id="xKt-Ys-Fs8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -277,9 +317,6 @@
         </namedColor>
         <namedColor name="bBoard">
             <color red="0.95294117647058818" green="0.77647058823529413" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="bSymbol">
-            <color red="0.070588235294117646" green="0.46274509803921571" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bWinner">
             <color red="0.062745098039215685" green="0.21568627450980393" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

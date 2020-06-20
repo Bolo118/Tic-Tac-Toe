@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var logoLabel: UILabel!
     @IBOutlet weak var whoseTurn: UILabel!
     @IBOutlet weak var gameOverLabel: UILabel!
+    @IBOutlet weak var xScore: UILabel!
+    @IBOutlet weak var oScore: UILabel!
     
     var data = DataModel()
     
@@ -32,20 +34,22 @@ class ViewController: UIViewController {
         whoseTurn.text = "Start with O"
         anotherGameButton.isHidden = true
         data.anotherGameButton = self.anotherGameButton
+
     }
     
     @IBAction func anotherGameButtonPressed(_ sender: UIButton) {
-        
         data.anotherGame()
         newTable()
+        data.scored = true
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
-        data.gotWinner()
+    
         data.isFull()
         data.whoseTurn = self.whoseTurn
         data.gameOverLabel = self.gameOverLabel
+        data.xScore = self.xScore
+        data.oScore = self.oScore
         
         if data.endGame == false {
             if data.boxNumber[sender.tag] != "X" && data.boxNumber[sender.tag] != "O" {
@@ -108,6 +112,7 @@ class ViewController: UIViewController {
                 }
             }
         }
+        data.gotWinner()
     }
     
     func newTable() {
