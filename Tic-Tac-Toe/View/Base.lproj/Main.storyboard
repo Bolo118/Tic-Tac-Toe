@@ -40,19 +40,34 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-4G-2Oq">
                                         <rect key="frame" x="0.0" y="137" width="414" height="132.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Fr-672">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                                <color key="textColor" name="bWinner"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-cH-msq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                        <color key="textColor" name="bWinner"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-9M-Awr">
+                                                        <rect key="frame" x="35.5" y="66.5" width="343" height="66"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                        <state key="normal" title="Restart Game?">
+                                                            <color key="titleColor" name="bWinner"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="anotherGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxM-Fv-ie1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="bBackground"/>
                                         <constraints>
-                                            <constraint firstItem="uzg-cH-msq" firstAttribute="top" secondItem="XMy-4G-2Oq" secondAttribute="top" id="NNW-mE-Kl3"/>
-                                            <constraint firstAttribute="bottom" secondItem="uzg-cH-msq" secondAttribute="bottom" id="guI-4w-jqX"/>
-                                            <constraint firstAttribute="trailing" secondItem="uzg-cH-msq" secondAttribute="trailing" id="hWp-Cp-zUJ"/>
-                                            <constraint firstItem="uzg-cH-msq" firstAttribute="leading" secondItem="XMy-4G-2Oq" secondAttribute="leading" id="piv-Mi-1dd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hv3-Fr-672" secondAttribute="trailing" id="Eld-eZ-u6g"/>
+                                            <constraint firstItem="Hv3-Fr-672" firstAttribute="top" secondItem="XMy-4G-2Oq" secondAttribute="top" id="VhA-Ql-e00"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hv3-Fr-672" secondAttribute="bottom" id="d9Y-Og-jhV"/>
+                                            <constraint firstItem="Hv3-Fr-672" firstAttribute="leading" secondItem="XMy-4G-2Oq" secondAttribute="leading" id="xXt-aI-ryF"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-Et-pQE">
@@ -236,6 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="anotherGameButton" destination="Ruc-9M-Awr" id="nxL-qd-4rN"/>
                         <outlet property="button1" destination="9SR-Pf-ggB" id="hLa-6J-ggZ"/>
                         <outlet property="button2" destination="dW5-ff-fRW" id="5Wb-Zo-gR6"/>
                         <outlet property="button3" destination="sAS-ya-QgS" id="Dpi-9w-jLd"/>

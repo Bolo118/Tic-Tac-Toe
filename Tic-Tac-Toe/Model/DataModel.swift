@@ -25,20 +25,13 @@ struct DataModel {
     
     var whoseTurn: UILabel?
     var gameOverLabel: UILabel?
-    var logoLabel: UILabel?
+
     
     var numberTurn = 0
     var boxNumber = ["0","1","2","3","4","5","6","7","8"]
     var turn = true
     var endGame = false
-    
-    mutating func isFull() {
-        if numberTurn == 9 {
-            endGame = true
-            gameOverLabel?.text = "Game Over"
-            whoseTurn?.text = "Draw"
-        }
-    }
+    var winner = false
     
     mutating func logic() {
         whoseTurn?.text = "\(showTurn(turn))'s turn"
@@ -46,12 +39,35 @@ struct DataModel {
         numberTurn += 1
     }
     
+    mutating func isFull() {
+        if numberTurn == 9 {
+            if winner == false {
+                endGame = true
+                gameOverLabel?.text = "Game Over"
+                whoseTurn?.text = "Draw"
+                anotherGameButton.isHidden = false
+            }
+        }
+    }
+    
     mutating func theWinner() {
         endGame = true
         whoseTurn?.text = "\(showTurn(turn)) won"
         gameOverLabel?.text = "Game Over"
         anotherGameButton?.isHidden = false
-        logoLabel?.isHidden = true
+        winner = true
+        anotherGameButton.isHidden = false
+    }
+    
+    mutating func anotherGame() {
+        numberTurn = 0
+        boxNumber = ["0","1","2","3","4","5","6","7","8"]
+        turn = true
+        endGame = false
+        winner = false
+        anotherGameButton.isHidden = true
+        whoseTurn?.text = "Start with O"
+        gameOverLabel?.text = " "
     }
     
     func showTurn(_ turn: Bool) -> String {
@@ -61,6 +77,7 @@ struct DataModel {
             return "O"
         }
     }
+    
     
     func bg(_ background: UIButton) {
         background.backgroundColor = UIColor(red: 0.06, green: 0.22, blue: 0.36, alpha: 1.00)

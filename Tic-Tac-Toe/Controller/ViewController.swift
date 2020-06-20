@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
     
+    @IBOutlet weak var anotherGameButton: UIButton!
     @IBOutlet weak var logoLabel: UILabel!
     @IBOutlet weak var whoseTurn: UILabel!
     @IBOutlet weak var gameOverLabel: UILabel!
@@ -29,9 +30,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         whoseTurn.text = "Start with O"
-        
+        anotherGameButton.isHidden = true
+        data.anotherGameButton = self.anotherGameButton
     }
     
+    @IBAction func anotherGameButtonPressed(_ sender: UIButton) {
+        
+        data.anotherGame()
+        newTable()
+    }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
@@ -103,6 +110,26 @@ class ViewController: UIViewController {
         }
     }
     
+    func newTable() {
+        button1.setTitle(nil, for: .normal)
+        button1.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button2.setTitle(nil, for: .normal)
+        button2.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button3.setTitle(nil, for: .normal)
+        button3.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button4.setTitle(nil, for: .normal)
+        button4.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button5.setTitle(nil, for: .normal)
+        button5.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button6.setTitle(nil, for: .normal)
+        button6.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button7.setTitle(nil, for: .normal)
+        button7.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button8.setTitle(nil, for: .normal)
+        button8.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+        button9.setTitle(nil, for: .normal)
+        button9.backgroundColor = UIColor(red: 0.95, green: 0.78, blue: 0.14, alpha: 1.00)
+    }
     
     
 }
